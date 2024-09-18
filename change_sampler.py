@@ -23,13 +23,15 @@ import matplotlib
 matplotlib.use("agg")
 import matplotlib.pyplot as plt
 
-# Set the solver we're going to use
-def set_sampler():
-    '''Returns a simulated annealing sampler'''
-    
-    ## TODO:  Import packages and add sampler here
+from dwave.samplers import SimulatedAnnealingSampler
 
-    return 
+# Set the solver we're going to use
+
+def set_sampler():
+    """Returns a simulated annealing sampler"""
+
+    return SimulatedAnnealingSampler()
+
 
 def create_graph():
     # Create empty graph
